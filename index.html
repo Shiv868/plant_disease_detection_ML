@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="scripts/script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Disease Detection</h1>
+        <input type="file" accept="image/*" onchange="loadImage(event)" id="imageUpload">
+        <div class="image-preview">
+            <img id="input-image" alt="Image Preview" />
+        </div>
+        <p id="prediction">Upload an image to get a prediction</p>
+        <p id="disease-info"></p>
+    </div>
+</body>
+</html>
